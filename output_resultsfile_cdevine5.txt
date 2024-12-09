@@ -1,0 +1,344 @@
+==================================================
+NTM Simulator Analysis
+Machine: a plus
+==================================================
+
+Processing input: ''
+Configuration Tree:
+Depth 0:
+[], (q1), [_]
+
+Result: Rejected
+Depth of configuration tree: 1
+Number of configurations explored: 0
+Average Nondeterminism: 1.00
+Comment: Computation is deterministic
+
+Processing input: 'a'
+Configuration Tree:
+Depth 0:
+[], (q1), [a]
+
+Depth 1:
+[a], (q1), [_]
+[a], (q2), [_]
+
+Depth 2:
+[a], (qreject), [_]
+[], (q3), [a_]
+
+Result: Accepted
+Depth of configuration tree: 3
+Number of configurations explored: 3
+Average Nondeterminism: 1.67
+Comment: Slight nondeterministic behavior observed
+
+Processing input: 'aa'
+Configuration Tree:
+Depth 0:
+[], (q1), [aa]
+
+Depth 1:
+[a], (q1), [a]
+[a], (q2), [a]
+
+Depth 2:
+[aa], (q1), [_]
+[aa], (q2), [_]
+[a], (qreject), [a]
+
+Depth 3:
+[aa], (qreject), [_]
+[a], (q3), [a_]
+
+Result: Accepted
+Depth of configuration tree: 4
+Number of configurations explored: 5
+Average Nondeterminism: 2.00
+Comment: Moderate nondeterministic behavior detected
+
+Processing input: 'aaa'
+Configuration Tree:
+Depth 0:
+[], (q1), [aaa]
+
+Depth 1:
+[a], (q1), [aa]
+[a], (q2), [aa]
+
+Depth 2:
+[aa], (q1), [a]
+[aa], (q2), [a]
+[a], (qreject), [aa]
+
+Depth 3:
+[aaa], (q1), [_]
+[aaa], (q2), [_]
+[aa], (qreject), [a]
+
+Depth 4:
+[aaa], (qreject), [_]
+[aa], (q3), [a_]
+
+Result: Accepted
+Depth of configuration tree: 5
+Number of configurations explored: 7
+Average Nondeterminism: 2.20
+Comment: Moderate nondeterministic behavior detected
+
+Processing input: 'aaaa'
+Configuration Tree:
+Depth 0:
+[], (q1), [aaaa]
+
+Depth 1:
+[a], (q1), [aaa]
+[a], (q2), [aaa]
+
+Depth 2:
+[aa], (q1), [aa]
+[aa], (q2), [aa]
+[a], (qreject), [aaa]
+
+Depth 3:
+[aaa], (q1), [a]
+[aaa], (q2), [a]
+[aa], (qreject), [aa]
+
+Depth 4:
+[aaaa], (q1), [_]
+[aaaa], (q2), [_]
+[aaa], (qreject), [a]
+
+Depth 5:
+[aaaa], (qreject), [_]
+[aaa], (q3), [a_]
+
+Result: Accepted
+Depth of configuration tree: 6
+Number of configurations explored: 9
+Average Nondeterminism: 2.33
+Comment: Moderate nondeterministic behavior detected
+
+Processing input: 'aaaaa'
+Configuration Tree:
+Depth 0:
+[], (q1), [aaaaa]
+
+Depth 1:
+[a], (q1), [aaaa]
+[a], (q2), [aaaa]
+
+Depth 2:
+[aa], (q1), [aaa]
+[aa], (q2), [aaa]
+[a], (qreject), [aaaa]
+
+Depth 3:
+[aaa], (q1), [aa]
+[aaa], (q2), [aa]
+[aa], (qreject), [aaa]
+
+Depth 4:
+[aaaa], (q1), [a]
+[aaaa], (q2), [a]
+[aaa], (qreject), [aa]
+
+Depth 5:
+[aaaaa], (q1), [_]
+[aaaaa], (q2), [_]
+[aaaa], (qreject), [a]
+
+Depth 6:
+[aaaaa], (qreject), [_]
+[aaaa], (q3), [a_]
+
+Result: Accepted
+Depth of configuration tree: 7
+Number of configurations explored: 11
+Average Nondeterminism: 2.43
+Comment: Moderate nondeterministic behavior detected
+
+Processing input: 'aaaaaaaa'
+Configuration Tree:
+Depth 0:
+[], (q1), [aaaaaaaa]
+
+Depth 1:
+[a], (q1), [aaaaaaa]
+[a], (q2), [aaaaaaa]
+
+Depth 2:
+[aa], (q1), [aaaaaa]
+[aa], (q2), [aaaaaa]
+[a], (qreject), [aaaaaaa]
+
+Depth 3:
+[aaa], (q1), [aaaaa]
+[aaa], (q2), [aaaaa]
+[aa], (qreject), [aaaaaa]
+
+Depth 4:
+[aaaa], (q1), [aaaa]
+[aaaa], (q2), [aaaa]
+[aaa], (qreject), [aaaaa]
+
+Depth 5:
+[aaaaa], (q1), [aaa]
+[aaaaa], (q2), [aaa]
+[aaaa], (qreject), [aaaa]
+
+Depth 6:
+[aaaaaa], (q1), [aa]
+[aaaaaa], (q2), [aa]
+[aaaaa], (qreject), [aaa]
+
+Depth 7:
+[aaaaaaa], (q1), [a]
+[aaaaaaa], (q2), [a]
+[aaaaaa], (qreject), [aa]
+
+Depth 8:
+[aaaaaaaa], (q1), [_]
+[aaaaaaaa], (q2), [_]
+[aaaaaaa], (qreject), [a]
+
+Depth 9:
+[aaaaaaaa], (qreject), [_]
+[aaaaaaa], (q3), [a_]
+
+Result: Accepted
+Depth of configuration tree: 10
+Number of configurations explored: 17
+Average Nondeterminism: 2.60
+Comment: Moderate nondeterministic behavior detected
+
+Processing input: 'aaaaaaaaaaaaa'
+Configuration Tree:
+Depth 0:
+[], (q1), [aaaaaaaaaaaaa]
+
+Depth 1:
+[a], (q1), [aaaaaaaaaaaa]
+[a], (q2), [aaaaaaaaaaaa]
+
+Depth 2:
+[aa], (q1), [aaaaaaaaaaa]
+[aa], (q2), [aaaaaaaaaaa]
+[a], (qreject), [aaaaaaaaaaaa]
+
+Depth 3:
+[aaa], (q1), [aaaaaaaaaa]
+[aaa], (q2), [aaaaaaaaaa]
+[aa], (qreject), [aaaaaaaaaaa]
+
+Depth 4:
+[aaaa], (q1), [aaaaaaaaa]
+[aaaa], (q2), [aaaaaaaaa]
+[aaa], (qreject), [aaaaaaaaaa]
+
+Depth 5:
+[aaaaa], (q1), [aaaaaaaa]
+[aaaaa], (q2), [aaaaaaaa]
+[aaaa], (qreject), [aaaaaaaaa]
+
+Depth 6:
+[aaaaaa], (q1), [aaaaaaa]
+[aaaaaa], (q2), [aaaaaaa]
+[aaaaa], (qreject), [aaaaaaaa]
+
+Depth 7:
+[aaaaaaa], (q1), [aaaaaa]
+[aaaaaaa], (q2), [aaaaaa]
+[aaaaaa], (qreject), [aaaaaaa]
+
+Depth 8:
+[aaaaaaaa], (q1), [aaaaa]
+[aaaaaaaa], (q2), [aaaaa]
+[aaaaaaa], (qreject), [aaaaaa]
+
+Depth 9:
+[aaaaaaaaa], (q1), [aaaa]
+[aaaaaaaaa], (q2), [aaaa]
+[aaaaaaaa], (qreject), [aaaaa]
+
+Depth 10:
+[aaaaaaaaaa], (q1), [aaa]
+[aaaaaaaaaa], (q2), [aaa]
+[aaaaaaaaa], (qreject), [aaaa]
+
+Depth 11:
+[aaaaaaaaaaa], (q1), [aa]
+[aaaaaaaaaaa], (q2), [aa]
+[aaaaaaaaaa], (qreject), [aaa]
+
+Depth 12:
+[aaaaaaaaaaaa], (q1), [a]
+[aaaaaaaaaaaa], (q2), [a]
+[aaaaaaaaaaa], (qreject), [aa]
+
+Depth 13:
+[aaaaaaaaaaaaa], (q1), [_]
+[aaaaaaaaaaaaa], (q2), [_]
+[aaaaaaaaaaaa], (qreject), [a]
+
+Depth 14:
+[aaaaaaaaaaaaa], (qreject), [_]
+[aaaaaaaaaaaa], (q3), [a_]
+
+Result: Accepted
+Depth of configuration tree: 15
+Number of configurations explored: 27
+Average Nondeterminism: 2.73
+Comment: Moderate nondeterministic behavior detected
+
+Processing input: 'ab'
+Configuration Tree:
+Depth 0:
+[], (q1), [ab]
+
+Depth 1:
+[a], (q1), [b]
+[a], (q2), [b]
+
+Result: Rejected
+Depth of configuration tree: 2
+Number of configurations explored: 2
+Average Nondeterminism: 1.50
+Comment: Slight nondeterministic behavior observed
+
+Processing input: 'aaab'
+Configuration Tree:
+Depth 0:
+[], (q1), [aaab]
+
+Depth 1:
+[a], (q1), [aab]
+[a], (q2), [aab]
+
+Depth 2:
+[aa], (q1), [ab]
+[aa], (q2), [ab]
+[a], (qreject), [aab]
+
+Depth 3:
+[aaa], (q1), [b]
+[aaa], (q2), [b]
+[aa], (qreject), [ab]
+
+Result: Rejected
+Depth of configuration tree: 4
+Number of configurations explored: 6
+Average Nondeterminism: 2.25
+Comment: Moderate nondeterministic behavior detected
+
+Processing input: 'b'
+Configuration Tree:
+Depth 0:
+[], (q1), [b]
+
+Result: Rejected
+Depth of configuration tree: 1
+Number of configurations explored: 0
+Average Nondeterminism: 1.00
+Comment: Computation is deterministic
